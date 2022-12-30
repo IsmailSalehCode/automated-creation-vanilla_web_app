@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* So that if we add padding or a border to an element, it doesn't affect the width of it */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  /* display flex cuz i wanna center everything, but everything we add will be added horizontally
+  i.e. if i type in <body>
+   <h1>hi</h1> <h1>hi</h1> 
+  </body>
+  the h1's will be next to each other
+  */
+  flex-direction: column; /*h1 behaviour is now back to normal (on new lines)*/
+
+  /* Since we use flex-box, I can use align-items property */
+  align-items: center;
+  /* Since flex-direction:column , align-items will work horizontally */
+
+  justify-content: center;
+
+  /* text is centered but at the top of the page cuz the body doesn't have a height. If i want to center vertically on the page, I'll have to add height for the body*/
+  height: 100vh;
+
+  /* overflow is hidden since I don't want scrollbars to be shown by default */
+  overflow: hidden;
+}
